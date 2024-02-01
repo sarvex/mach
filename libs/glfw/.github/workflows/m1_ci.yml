@@ -20,7 +20,7 @@ jobs:
         run: |
           rm -rf $GITHUB_WORKSPACE && mkdir $GITHUB_WORKSPACE
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: test
         run: zig build test
         env:

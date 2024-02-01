@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout hexops/mach-examples repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: hexops/mach-examples
           token: ${{ secrets.HEXOPS_MACH_PUSH_SUBREPOS }}

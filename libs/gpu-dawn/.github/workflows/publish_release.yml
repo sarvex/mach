@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Record latest release version
         id: recorded_release_version
         # Note: we find the latest non-'update to latest binary release' commit here, which is not
@@ -27,7 +27,7 @@ jobs:
       #   env:
       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Checkout hexops/mach monorepo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: hexops/mach
           token: ${{ secrets.HEXOPS_MACH_GPU_DAWN_PUSH }}

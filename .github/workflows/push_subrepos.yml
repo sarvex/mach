@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           # fetch full Git history, otherwise push-subrepos.sh would fail due to not being able to
           # split the git subtree.
